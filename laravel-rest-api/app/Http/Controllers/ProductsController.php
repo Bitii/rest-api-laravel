@@ -20,7 +20,7 @@ class ProductsController extends Controller
     }
 
     public function update(ProductRequest $request, $id)
-    {    
+    {
         $product = Product::findOfFail($id);
         $product->update($request->all());
         return response()->json(['product' => $product]);
@@ -30,7 +30,9 @@ class ProductsController extends Controller
     {
         $product = Product::findOfFail($id);
         $product->delete();
-        return response()->json(['message' => 'Product deleted successfully',
-        'id' => $id]);
+        return response()->json([
+            'message' => 'Product deleted successfully',
+            'id' => $id
+        ]);
     }
 }

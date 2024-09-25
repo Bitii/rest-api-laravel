@@ -21,7 +21,7 @@ class ProductRequest extends FormRequest
      */
     public function rules(): array
     {
-        if($this->method() == 'PATCH'){
+        if ($this->method() == 'PATCH') {
             return [
                 'category' => 'nullable|string|min:2',
                 'name' => 'nullable|string|min:3',
