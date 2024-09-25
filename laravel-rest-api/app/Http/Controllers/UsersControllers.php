@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
 class UsersControllers extends Controller
@@ -17,6 +17,7 @@ class UsersControllers extends Controller
             'email' => 'required|email',
             'password' => 'required',
         ]);
+
         $user = User::where('email', $email)->first();
         if (!$user || !Hash::check($password, $password ? $user->password : '')) {
             return response()->json([
