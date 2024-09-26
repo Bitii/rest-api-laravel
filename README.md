@@ -12,6 +12,7 @@ composer install [ha nincs composer a gépeden, akkor telepíteni kell]
 
 .env létrehozás / env.example átmásolása<br>
   [fontos, hogy a .env legyen létrehozva és az example adatait átmásold, mert a git nem fogja commitolni a .env változtatásokat]<br>
+  
  -APP_URL=http://localhost <-saját localhost útvonal<br>
  -DB_DATABASE=  <- ide kell megadni az adatbázis nevét<br>
  -DB_USERNAME=root
@@ -20,7 +21,8 @@ composer install [ha nincs composer a gépeden, akkor telepíteni kell]
 db létrehozása<br>
  -azzal a névvel amit megadtunk//ha már van akkor nem kell létrehozni
 
-storage/framework/cache, storage/framework/sessions, storage/framework/views mappák írhatóvá tétele [Windowson ez az alapértelmezett]<br>
+storage/framework/cache, storage/framework/sessions, storage/framework/views mappák írhatóvá tétele<br>
+[Windowson ez az alapértelmezett]<br>
 
 
 ## Endpoints
