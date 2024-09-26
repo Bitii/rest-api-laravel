@@ -40,6 +40,6 @@ composer install
  -DB_PASSWORD=""
 
 db létrehozása<br>
- -azzal a névvel amit megadtunk
+ -azzal a névvel amit megadtunk//ha már van akkor nem kell létrehozni
 
 storage/framework/cache, storage/framework/sessions, storage/framework/views mappák írhatóvá tétele<br>
