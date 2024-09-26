@@ -4,7 +4,7 @@ We do _not_ use default `SPA Authentication` https://laravel.com/docs/11.x/sanct
 
 
 ## Laravel REST API életre keltés
-
+```
 projekted gyökerében létrehozol egy api mappát<br>
 belelépsz az api mappába (cd api)<br>
 git clone https://github.com/Bitii/rest-api-laravel.git . [KELL A PONT IS]<br>
@@ -12,7 +12,7 @@ composer install [ha nincs composer a gépeden, akkor telepíteni kell]
 
 .env létrehozás / env.example átmásolása<br>
   [fontos, hogy a .env legyen létrehozva és az example adatait átmásold, mert a git nem fogja commitolni a .env változtatásokat]<br>
-  
+
  -APP_URL=http://localhost <-saját localhost útvonal<br>
  -DB_DATABASE=  <- ide kell megadni az adatbázis nevét<br>
  -DB_USERNAME=root
@@ -23,7 +23,7 @@ db létrehozása<br>
 
 storage/framework/cache, storage/framework/sessions, storage/framework/views mappák írhatóvá tétele<br>
 [Windowson ez az alapértelmezett]<br>
-
+```
 
 ## Endpoints
 
