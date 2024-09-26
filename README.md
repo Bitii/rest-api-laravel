@@ -30,7 +30,7 @@ We do _not_ use default `SPA Authentication` https://laravel.com/docs/11.x/sanct
 
 
 ## Laravel REST API életre keltés
-git clone https://github.com/Bitii/rest-api-laravel.git .
+git clone https://github.com/Bitii/rest-api-laravel.git .<br>
 composer install
 
 .env létrehozás / módosítás<br>
@@ -38,5 +38,6 @@ db létrehozása<br>
 storage/framework/cache,<br>
 storage/framework/sessions,<br>
 storage/framework/views mappák írhatóvá tétele<br>
+
 php artisan key:generate<br>
 php artisan migrate:fresh --seed<br>
