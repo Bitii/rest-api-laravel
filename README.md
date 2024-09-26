@@ -2,6 +2,24 @@
 
 We do _not_ use default `SPA Authentication` https://laravel.com/docs/11.x/sanctum#spa-authentication
 
+
+## Laravel REST API életre keltés
+git clone https://github.com/Bitii/rest-api-laravel.git .<br>
+composer install (ha nincs composer a gépeden, akkor telepíteni kell)
+
+.env létrehozás / env.example átmásolása<br>
+  (fontos, hogy a .env legyen létrehozva és az example adatait átmásold, mert a git nem fogja commitolni a .env változtatásokat)<br>
+ -APP_URL=http://localhost <-saját localhost útvonal<br>
+ -DB_DATABASE=  <- ide kell megadni az adatbázis nevét<br>
+ -DB_USERNAME=root
+ -DB_PASSWORD=""
+
+db létrehozása<br>
+ -azzal a névvel amit megadtunk//ha már van akkor nem kell létrehozni
+
+storage/framework/cache, storage/framework/sessions, storage/framework/views mappák írhatóvá tétele<br>
+
+
 ## Endpoints
 
 | URL          | HTTP method | Auth | JSON Response     |
@@ -27,20 +45,3 @@ We do _not_ use default `SPA Authentication` https://laravel.com/docs/11.x/sanct
 10. `php artisan make:controller ProductsController`
 11. `php artisan make:request ProductRequest`
 12. `php artisan config:publish cors`
-
-
-## Laravel REST API életre keltés
-git clone https://github.com/Bitii/rest-api-laravel.git .<br>
-composer install (ha nincs composer a gépeden, akkor telepíteni kell)
-
-.env létrehozás / env.example átmásolása<br>
-  (fontos, hogy a .env legyen létrehozva és az example adatait átmásold, mert a git nem fogja commitolni a .env változtatásokat)<br>
- -APP_URL=http://localhost <-saját localhost útvonal<br>
- -DB_DATABASE=  <- ide kell megadni az adatbázis nevét<br>
- -DB_USERNAME=root
- -DB_PASSWORD=""
-
-db létrehozása<br>
- -azzal a névvel amit megadtunk//ha már van akkor nem kell létrehozni
-
-storage/framework/cache, storage/framework/sessions, storage/framework/views mappák írhatóvá tétele<br>
