@@ -17,7 +17,7 @@ composer install
 [ha nincs composer a gépeden, akkor telepíteni kell]
 
 .env létrehozás / env.example átmásolása<br>
-  [fontos, hogy a .env legyen létrehozva és az example adatait átmásold, mert a git nem fogja commitolni a .env változtatásokat]<br>
+  [fontos, hogy a .env legyen létrehozva és az example adatait átmásold, mert a git nem fogja figyelembe venni a .env változtatásokat]<br>
 
  -APP_URL=http://localhost <-saját localhost útvonal<br>
  -DB_DATABASE=  <- ide kell megadni az adatbázis nevét<br>
