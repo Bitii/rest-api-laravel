@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     use HasFactory;
-    public $timestamps = false;
+    public $timestamps = false; // a product táblában nincs created_at és updated_at mező amit laravel keresne
 
     protected $fillable = [
         'category',
